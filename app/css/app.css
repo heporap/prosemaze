@@ -1,0 +1,267 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+article.psmaze {
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+}
+div.stage {
+	width: 960px;
+	height: 540px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-user-select: none;
+	 -khtml-user-select: none;
+	   -moz-user-select: none;
+	        user-select: none;
+}
+div.stage .field {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+div.stage .field img {
+	position: absolute;
+	opacity: 1;
+	-webkit-transition: .5s linear all;
+	   -moz-transition: .5s linear all;
+	    -ms-transition: .5s linear all;
+	     -o-transition: .5s linear all;
+	        transition: .5s linear all;
+}
+div.stage .field img.fadein.ng-hide {
+  display:block!important;
+	opacity: 0;
+}
+div.stage .field img.loading {
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 200px;
+	margin-left: -100px;
+	margin-top: -100px;
+}
+div.stage .field img.background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+div.stage .field img.chara {
+	opacity: 0;
+}
+div.stage .field img.chara.show {
+	opacity: 1;
+}
+div.stage .dialogbacklayer,
+div.stage .dialog {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 6em;
+	bottom: 0;
+	line-height: 1.6em;
+	font-size: 24px;
+	padding: .3em 1em;
+	box-sizing: border-box;
+	color: #000;
+}
+div.stage .dialogbacklayer {
+	background-color: #FEFFFF;
+	opacity: .3;
+	border: 2px solid #9ef;
+}
+div.stage .dialog {
+	border: 2px solid transparent;
+	-webkit-text-shadow: 0px 0px 5px #fff;
+	   -moz-text-shadow: 0px 0px 5px #fff;
+	    -ms-text-shadow: 0px 0px 5px #fff;
+	     -o-text-shadow: 0px 0px 5px #fff;
+	        text-shadow: 0px 0px 5px #fff;
+	cursor: pointer;
+}
+div.stage .dialog.selection .zeroline {
+	visibility: hidden;
+}
+div.stage .dialog:hover {
+	border: 2px solid #9ef;
+	box-shadow: 0px 0px 10px #fff inset;
+}
+
+div.stage .dialog img.button-next {
+	position: absolute;
+	z-index: 10;
+	bottom: 15px;
+	right: 15px;
+	width: 32px;
+	height: 32px;
+
+	-webkit-transform-origin: 0 0;
+	-webkit-animation-name: butterfly;
+	-webkit-animation-duration: 1500ms;
+	-webkit-animation-delay: 500ms;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	-moz-transform-origin: 0 0;
+	-moz-animation-name: butterfly;
+	-moz-animation-duration: 1500ms;
+	-moz-animation-delay: 500ms;
+	-moz-animation-fill-mode: forwards;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+
+	-o-transform-origin: 0 0;
+	-o-animation-name: butterfly;
+	-o-animation-duration: 1500ms;
+	-o-animation-delay: 500ms;
+	-o-animation-fill-mode: forwards;
+	-o-animation-timing-function: linear;
+	-o-animation-iteration-count: infinite;
+
+	-ms-transform-origin: 0 0;
+	-ms-animation-name: butterfly;
+	-ms-animation-duration: 1500ms;
+	-ms-animation-delay: 500ms;
+	-ms-animation-fill-mode: forwards;
+	-ms-animation-timing-function: linear;
+	-ms-animation-iteration-count: infinite;
+
+	transform-origin: 0 0;
+	animation-name: butterfly;
+	animation-duration: 1500ms;
+	animation-delay: 500ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+}
+div.stage .dialog img.button-next:hover {
+	-webkit-animation-name: none;
+	-moz-animation-name: none;
+	-o-animation-name: none;
+	-ms-animation-name: none;
+	animation-name: none;
+}
+@-webkit-keyframes butterfly {
+	 0% {opacity: 1.0;}
+	20% {opacity: 0.0;}
+	40% {opacity: 1.0;}
+	100% {opacity:1.0;}
+} /* butterfly */
+@-moz-keyframes butterfly {
+	 0% {opacity: 1.0;}
+	20% {opacity: 0.0;}
+	40% {opacity: 1.0;}
+	100% {opacity:1.0;}
+}
+@-ms-keyframes butterfly {
+	 0% {opacity: 1.0;}
+	20% {opacity: 0.0;}
+	40% {opacity: 1.0;}
+	100% {opacity:1.0;}
+}
+@-o-keyframes butterfly {
+	 0% {opacity: 1.0;}
+	20% {opacity: 0.0;}
+	40% {opacity: 1.0;}
+	100% {opacity:1.0;}
+}
+@keyframes butterfly {
+	 0% {opacity: 1.0;}
+	20% {opacity: 0.0;}
+	40% {opacity: 1.0;}
+	100% {opacity:1.0;}
+}
+
+div.stage .dialog p {
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	line-height: inherit;
+	min-height: 1.8em;
+	box-sizing: border-box;
+}
+div.stage .dialog a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #000;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+div.stage .dialog a:hover {
+	text-decoration: none;
+}
+div.stage .dialog.selection {
+}
+div.stage .dialog.selection p {
+	width: 49%;
+	float: left;
+	border: 2px solid #aaa;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	    -ms-border-radius: 4px;
+	     -o-border-radius: 4px;
+	        border-radius: 4px;
+}
+div.stage .dialog.selection p:hover {
+	border-color: #fff;
+}
+div.stage .dialog.selection p:first-child {
+	border-color: transparent;
+}
+div.stage .dialog.selection p:nth-child(2n+1) {
+	clear: left;
+}
+div.stage .dialog.selection p:first-child:hover {
+	border-color: transparent;
+}
+
+.page_nav {
+	margin: 0 auto 0 auto;
+	width: 80%;
+}
+.page_nav .btn-group {
+	margin: 1em 0 0 0;
+}
+.page_nav button.active {
+	box-shadow: 0 0 5px #00F inset;
+}

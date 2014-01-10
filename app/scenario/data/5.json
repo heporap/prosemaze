@@ -1,0 +1,24 @@
+{
+	"lines": [
+		"5ページ目",
+		"サンプルはこれで終わりです。",
+		""
+	],
+	"scene": "stage1.jpg",
+	"charas": [
+		{
+			"url": "chara1.png",
+			"left": "640px",
+			"top": "140px",
+			"show": [0]
+		},
+		{
+			"url": "chara2.png",
+			"left": "340px",
+			"top": "140px",
+			"show": [0]
+		}
+	],
+	"select": ["どうする？", "","", "タイトルへ", 0, "", "", "githubプロジェクトページへ", "http://github.com/heporap/prosemaze"],
+	"next": "http://github.com/heporap/prosemaze"
+}

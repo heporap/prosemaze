@@ -1,0 +1,20 @@
+{
+	"lines": [
+		"nextは次のページへの移動指定です。",
+		"",
+		"",
+		"trueなら次のページ番号へ進みます。",
+		"falseはタイトル画面に戻ります。",
+		"URLを記述するとそのURLへ移動します。"
+	],
+	"scene": "stage3.jpg",
+	"charas": [
+		{
+			"url": "chara2.png",
+			"left": "640px",
+			"top": "140px",
+			"show": 0
+		}
+	],
+	"next": true
+}

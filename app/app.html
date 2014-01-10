@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app="psMaze">
+<head>
+	<meta charset="utf-8">
+	<meta name="x-ua-compatible" content="IE=Edge">
+	<meta name="viewport" content="width=960">
+	<title>Prosemaze</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body id="psmaze" ng-controller="psMazeConfigCtrl">
+	<header class="title" style="display:none;"><h1>{{title}}</h1></header>
+	
+	<article class="main psmaze" style="width:{{width}};" ng-cloak>
+		<div ng-view></div>
+		
+		<section id="page_nav" class="page_nav btn-toolbar" role="toolbar" ng-controller="psMazeNavCtrl">
+			<div class="btn-group" ng-if="navTitle || navPage">
+				<button type="button" class="btn btn-default page" ng-click="changePage('');" ng-if="navTitle">TITLE</button>
+				<button type="button" class="btn btn-default page" ng-repeat="pg in pages" ng-click="changePage(pg);" ng-class="{active:pageNumber==pg}">{{pg}}</button>
+			</div>
+		</section>
+	</article>
+  <!-- In production use:
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  -->
+	<script src="lib/angular/angular.js"></script>
+	<script src="lib/angular/angular-route.js"></script>
+	<script src="lib/angular/angular-animate.js"></script>
+	<script src="lib/angular/angular-resource.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/filters.js"></script>
+	<script src="js/directives.js"></script>
+	<script src="js/animations.js"></script>
+</body>
+</html>

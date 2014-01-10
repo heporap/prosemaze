@@ -1,0 +1,29 @@
+<div id="stage" class="stage" style="height:{{height}};width:{{width}};">
+	<div class="field">
+		<img src="css/loading.gif"
+				 class="loading"
+				 ng-hide="allimageloaded"
+				 >
+		<img ng-src="{{script.scene}}"
+				 class="background fadein"
+				 ng-show="allimageloaded"
+				 onloadimage
+				 >
+		<img ng-src="{{img.url}}"
+				 class="chara fadein"
+				 ng-class="{show: img.cssShow}"
+				 style="top:{{img.top}};left:{{img.left}}"
+				 ng-repeat="img in script.charas"
+				 onloadimage
+				 >
+	</div>
+	<div class="dialogbacklayer"></div>
+	<div class="dialog"
+			 ng-class="{selection:dialogMode=='selection'}"
+			 ng-click="nextPage($event)">
+		<p ng-repeat="ln in script.lines track by $index"
+			 ng-class="{zeroline:ln==''}"
+			  ng-click="sellectCommand($index, $event)">{{ln}}</p>
+		<img src="css/button-next.png" class="button-next" ng-show="talking==false && dialogMode!='selection'">
+	</div>
+</div>

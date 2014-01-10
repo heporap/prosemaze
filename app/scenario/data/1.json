@@ -1,0 +1,17 @@
+{
+	"lines": [
+		"linesにメッセージを書き込むとダイアログに表示されます。",
+		"linesは３行ずつページングされます。",
+		"sceneは背景画像のファイル名です。"
+	],
+	"scene": "stage1.jpg",
+	"charas": [
+		{
+			"url": "chara1.png",
+			"left": "640px",
+			"top": "140px",
+			"show": 0
+		}
+	],
+	"next": true
+}
