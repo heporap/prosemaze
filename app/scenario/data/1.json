@@ -10,7 +10,7 @@
 			"url": "chara1.png",
 			"left": "640px",
 			"top": "140px",
-			"show": 0
+			"show": [0]
 		}
 	],
 	"next": true
