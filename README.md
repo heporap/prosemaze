@@ -18,7 +18,7 @@ Prosemazeはオンラインゲームブックを作るテンプレートです�
         data/             --> ページシナリオファイル
         scene/            --> シーン画像
       img/
-        index.css       --> index.htmlの
+        index.css       --> index.htmlのスタイル
 以下のディレクトリは変更しないでください。
     css/                    --> cssファイル
       js/                   --> javascriptファイル
@@ -77,13 +77,13 @@ scenario/data ディレクトリに「連番＋.json」で保存してくださ�
       "url": "chara1.png",   --> キャラクターのファイル名
       "left": "300px",       --> 表示位置（左端）
       "top": "100px",        --> 表示位置（上端）
-      "show": 0              --> 表示タイミング
+      "show": [0,1]          --> 表示、非表示タイミング
     },
     {
       "url": "chara2.png",
       "left": "30px",
       "top": "290px",
-      "show": 1
+      "show": [1]
     }
   ],
   "select": [                --> ページ分岐
