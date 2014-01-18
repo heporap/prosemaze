@@ -1,16 +1,9 @@
-/****
- * Prosemaze
- * (c) Wicker Wings, 2014 http://www.wi-wi.jp/
- * License: MIT
- ****/
-'use strict';
-
-$(".stage p").on("selectstart", function(event){
+jQuery(".stage p").on("selectstart", function(event){
 	event.prepentDefault();
 }).on("mousedown", function(event){
 	event.preventDefault();
 });
-$(window).on('load', function(){
+jQuery(window).on('load', function(){
 	setTimeout( function(){scrollTo(0,0);}, 100);
 });
 // Declare app level module which depends on filters, and services

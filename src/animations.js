@@ -1,12 +1,4 @@
-/****
- * Prosemaze
- * (c) Wicker Wings, 2014 http://www.wi-wi.jp/
- * License: MIT
- ****/
-'use strict';
-
 /* Services */
-
 var psMazeAnimations = angular.module('psMaze.animations', ['ngAnimate']);
 
 /****

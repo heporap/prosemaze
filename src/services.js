@@ -1,10 +1,3 @@
-/****
- * Prosemaze
- * (c) Wicker Wings, 2014 http://www.wi-wi.jp/
- * License: MIT
- ****/
-'use strict';
-
 /* Services */
 var psMazeServices = angular.module('psMaze.services', ['ngResource']);
 
@@ -93,7 +86,7 @@ psMazeServices.factory('psMazeFactory',
 		appFactory.restartLines = function(){
 			this.curLine = 0;
 			this.dialogShown = false;
-		}
+		};
 		
 		appFactory.setSelection = function(diag){
 			if( !diag ){

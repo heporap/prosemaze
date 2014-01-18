@@ -1,10 +1,3 @@
-/****
- * Prosemaze
- * (c) Wicker Wings, 2014 http://www.wi-wi.jp/
- * License: MIT
- ****/
-'use strict';
-
 /* Controllers */
 var psMazeControllers = angular.module('psMaze.controllers', []);
 
@@ -226,7 +219,7 @@ psMazeControllers.controller('psMazePageCtrl', ['$scope', '$routeParams', '$time
 			$scope.talking = true;
 			$scope.curLine = 0;
 			$scope.script.lines = [];
-			for(var i=0; i<$scope.lines.length; $scope.script.lines[i++] = '' );
+			for(i=0; i<$scope.lines.length; $scope.script.lines[i++] = '' );
 			$scope.runTalk();
 			
 			return true;

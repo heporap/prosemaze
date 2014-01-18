@@ -2,4 +2,5 @@ design/
 logs/
 scripts/
 test/
+node_modules/
 
